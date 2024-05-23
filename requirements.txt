@@ -1,0 +1,12 @@
+streamlit
+pandas
+numpy
+langchain
+pypdf
+ipykernel
+langchain-community
+nltk
+langchain_google_genai
+python-dotenv
+chromadb
+cohere
