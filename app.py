@@ -33,8 +33,11 @@ chunks=text_splitter.split_documents(text)
 
 # loading the models
 load_dotenv()
-cohere_api_key = os.getenv('COHERE_API_KEY')
-google_api_key=os.getenv('GOOGLE_API_KEY')
+# cohere_api_key = os.getenv('COHERE_API_KEY')
+# google_api_key=os.getenv('GOOGLE_API_KEY')
+
+google_api_key=st.secrets["GOOGLE_API_KEY"]
+cohere_api_key=st.secrets["COHERE_API_KEY"]
 
 # Initialize the CohereEmbeddings object
 cohere_embeddings = CohereEmbeddings(
